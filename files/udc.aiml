@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+   
+  </category>
+  <category>
+       <pattern>Hello</pattern>
+    <template>Hello, I'm here to guide you to help you find a job that best fits your needs. What interests you most about computer science?</template>
+  </category>
+  
+     <category>
+       <pattern>^ <set>web</set> ^</pattern>
+    <template>Perhaps you might be interested in Web Development. As a web developer, you would design and deploy responsive web applications that adheres to UI/UX principles.
+    Does this sound like something you'd be interested in?</template>
+    
+  </category>
+       <category>
+       <pattern>^ <set>game</set> ^</pattern>
+    <template>It sounds like you're interested in being a Game Developer. 
+    As a Game Developer, you would be working in a field that encompasses a variety of digital media displines to produce an interactive experience.
+    Does this sound like something you'd be interested in?</template>
+    
+  </category>
+       <category>
+       <pattern>^ <set>dev</set> ^</pattern>
+    <template>Perhaps you might be a good fit for Software Development. As a Software Developor, you would use programming skills to design, develop, and deploy computer applications.
+    Does this sound like something you'd be interested in?</template>
+    
+  </category>
+       <category>
+       <pattern>^ <set>infosec</set> ^</pattern>
+    <template>How about Cybersecurity? As a Cybersecurity specialist, you are responsibly for keeping data and networks secure from malicious attackers.
+    Does this sound like something you'd be interested in?</template>
+    
+  </category>
+       <category>
+       <pattern>^ <set>ml</set> ^</pattern>
+    <template>Have you considered Machine Learning? As a Machine Learning specialist, you will use algothrims to train computer models through datasets.
+    Does this sound like something you'd be interested in?</template>
+    
+  </category>
+  
+   <category>
+       <pattern>no</pattern>
+       <that> DOES THIS SOUND LIKE SOMETHING YOU HAD BE INTERESTED IN</that>
+    <template>Okay, we'll find something else that you may be interested in. What's something else that you may be interested in?</template>
+  </category>
+
+   <category>
+       <pattern>yes</pattern>
+       <that> DOES THIS SOUND LIKE SOMETHING YOU HAD BE INTERESTED IN</that>
+    <template>Great, it sounds like you have a career goal in mind! If you have any more questions, feel free to call the office at 555 5555, otherwise, have a great day!
+    </template>
+  </category>
+
+</aiml>
